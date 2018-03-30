@@ -36,7 +36,7 @@ def solution(image):
         for j in range(n):
             if image[i][j] == 0:
                 # See the sample output #2 where the coordinates of the top-left cell and coordinates of the bottom right-cell are returned
-                return i, j, i + dfs2(i, j, height) - 2, j + dfs1(i, j, width) - 2
-
-
+                print(i, j, i + dfs2(i, j, height) - 2, j + dfs1(i, j, width) - 2)
+                #return i, j, i + dfs2(i, j, height) - 2, j + dfs1(i, j, width) - 2
+                exit()
 print(solution(image))
